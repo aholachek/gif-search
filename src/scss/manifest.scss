@@ -1,0 +1,59 @@
+
+
+ @import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+
+
+@import '_custom-variables';
+@import './../../node_modules/bootstrap/scss/bootstrap';
+
+a {
+  font-weight: bold;
+}
+
+.regular-text {
+  font-family: $font-family-sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+  font-family : 'Rammetto One';
+}
+
+nav a {
+  font-size: 1.3rem;
+}
+
+.attention-font {
+  font-family : 'Rammetto One';
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  @media(min-width: 600px) {
+    flex-direction: row;
+  }
+  justify-content: center;
+  align-items: center;
+}
+
+.flex > div {
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+}
+
+.centered-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.full-width {
+  display: block;
+  width: 100%;
+}
