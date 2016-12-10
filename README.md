@@ -1,4 +1,4 @@
-# gif-deathmatch
+# Gif Search
 
 > A Vue.js project
 
