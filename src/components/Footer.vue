@@ -14,13 +14,9 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style>
 
 footer {
-  position: absolute;
-  bottom:1rem;
-  left:0;
-  right:0;
+  font-size: 1.3rem;
 }
-
 </style>

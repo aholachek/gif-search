@@ -1,7 +1,5 @@
 
 
- @import url('https://fonts.googleapis.com/css?family=Rammetto+One');
-
 
 @import '_custom-variables';
 @import './../../node_modules/bootstrap/scss/bootstrap';
@@ -14,8 +12,12 @@ a {
   font-family: $font-family-sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6,a{
-  font-family : 'Rammetto One';
+h1,h2,h3,h4,h5,h6,a:not(.btn){
+  font-family : 'Space Mono', monospace;
+}
+
+h1, h3 {
+  font-weight: bold;
 }
 
 nav a {
@@ -23,7 +25,8 @@ nav a {
 }
 
 .attention-font {
-  font-family : 'Rammetto One';
+  font-family : 'Space Mono', monospace;
+  font-weight: bold;
 }
 
 .font-weight-light {
@@ -56,4 +59,35 @@ nav a {
 .full-width {
   display: block;
   width: 100%;
+}
+
+.centered-btn-container {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+header {
+  padding: 1rem 0;
+}
+
+footer {
+  padding: 1rem;
+}
+
+.card {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.btn {
+  white-space: normal !important;
+}
+
+@include media-breakpoint-up(sm) {
+  .examples .flex .card:first-of-type {
+    margin-right: 5%;
+  }
 }

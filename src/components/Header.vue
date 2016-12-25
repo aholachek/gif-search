@@ -2,14 +2,8 @@
   <header>
     <div class="container">
       <router-link to="/">
-        <img src="./../assets/face.gif" alt="gif of a rotating face" class="gif" />
-        Reaction Gif Interpreter
-      </router-link>
-      <p class="float-md-right" style="padding-top: 1.5rem;font-size:1.1rem">
-         Take a selfie to find relevant reaction gifs.
-       </p>
-
-    </div>
+      <h1>Reaction GIF Generator</h1>
+    </router-link>
   </header>
 </template>
 
@@ -32,11 +26,12 @@ export default {
 
 <style>
 
-.gif {
-  max-width: 60px;
-  height: auto;
+.large-text {
+  font-size: 2rem;
 }
-header {
-  margin-bottom: 2rem;
+
+.examples {
+  margin: 2rem 0;
 }
+
 </style>

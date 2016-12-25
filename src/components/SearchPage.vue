@@ -1,12 +1,12 @@
 <template>
-<div class="my-camera-container">
+<div class="my-camera-container card">
   <div class="my-camera"></div>
   <button v-if="loading" type="button" class="btn btn-lg btn-primary submit-btn">
     <i class="fa fa-spinner fa-pulse fa-fw"></i>
       analyzing expression...
     </button>
   <button v-else type="button" class="btn btn-lg btn-primary submit-btn" @click="submitPic">
-          submit my current expression
+          <i class="fa fa-camera"></i>&nbsp;submit my current expression
         </button>
   <div class="">
     <p>
@@ -41,7 +41,7 @@ export default {
     submitPic: function() {
       var that = this;
       Webcam.snap(function(data_uri) {
-        
+
         that.$data.loading = true;
         axios.post('http://localhost:4000', {
           data: data_uri
@@ -50,6 +50,11 @@ export default {
           appData.emotion = response.data.emotion;
           appData.screenshot = data_uri;
           that.$router.push('/match');
+          //reset webcam object
+          Webcam.preview_active = false;
+        })
+        .catch(function(response){
+          that.$router.push('/error');
           //reset webcam object
           Webcam.preview_active = false;
         });
@@ -64,6 +69,7 @@ export default {
 .my-camera-container {
   width: 500px;
   margin: 2rem auto;
+  padding-top: 2rem;
 }
 
 .my-camera {

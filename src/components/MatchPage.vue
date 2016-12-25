@@ -8,14 +8,22 @@
         <img v-bind:src="screenshot" alt="screenshot" class="screenshot img-circle" />
       </div>
     </div>
-    <div class="flex">
-      <div style="align-items:flex-end">
+    <div class="flex card gif-card">
+      <div style="align-items:flex-end" class="hidden-sm-down">
         <button class="btn btn-primary" @click="prevIndex">
           <i class="fa fa-arrow-left" aria-label="next"></i>
         </button>
       </div>
-      <div style="margin:0  2rem">
-        <iframe v-bind:src="gif.embed_url" height="300" width="400" frameBorder="0" class="giphy-embed" allowFullScreen/>
+      <div style="margin:0 2rem">
+        <iframe v-bind:key="gif.embed_url" v-bind:src="gif.embed_url" height="300" width="400" frameBorder="0" class="giphy-embed" allowFullScreen/>
+        <p>
+          <small><a href="https://giphy.com/gifs/computer-infomercial-shut-EFXGvbDPhLoWs">via GIPHY</a></small>
+        </p>
+      </div>
+      <div style="align-items:flex-end" class="hidden-sm-up">
+        <button class="btn btn-primary" @click="prevIndex">
+          <i class="fa fa-arrow-left" aria-label="next"></i>
+        </button>
       </div>
       <div style="align-items:flex-start">
         <button class="btn btn-primary" @click="nextIndex" aria-label="prev">
@@ -23,12 +31,16 @@
         </button>
       </div>
     </div>
+    <div class="centered-btn-container">
+      <router-link to="/search" class="btn btn-lg btn-primary">
+        <i class="fa fa-arrow-left"></i>&nbsp;Try again with another picture
+      </router-link>
+    </div>
   </div>
 </template>
 
 <script>
 
-import Router from './../router';
 import appData from './../appData';
 import _ from 'lodash';
 
@@ -54,8 +66,15 @@ export default {
     }
   },
   computed : {
-    gif : function(){
+    gif : function() {
       return this.$data.gifList[this.$data.gifIndex];
+    },
+    nextGif : function() {
+      if (this.$data.gifIndex + 1 < this.$data.gifList.length){
+        return this.$data.gifList[this.$data.gifIndex + 1];
+      } else {
+        return this.$data.gifList[0];
+      }
     }
   },
   methods : {
@@ -88,10 +107,9 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.button-container {
-  margin: 2rem 0 3rem 0;
+.gif-card{
+  max-width: 600px;
+  margin:auto;
 }
-
-
 
 </style>
