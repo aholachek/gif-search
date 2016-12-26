@@ -31,7 +31,7 @@
           <img src="./../assets/bitch_please.png" alt="picture of a happy stick figure" class="img-fluid">
         </div>
         <div class="card">
-<iframe src="//giphy.com/embed/j0IvNX2iBd3q0" width="350" height="220" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> </div>
+          <iframe src="//giphy.com/embed/j0IvNX2iBd3q0" width="350" height="220" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> </div>
       </div>
       <h3>etc...</h3>
 
