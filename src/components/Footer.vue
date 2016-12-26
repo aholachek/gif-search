@@ -2,8 +2,8 @@
   <footer>
     <div class="container">
       <span class="float-md-right by-link">
-       Made by <a href="http://alex.holachek.com/">Alex</a> using <a href="https://giphy.com/">GIPHY</a> and
-       <a href="https://www.microsoft.com/cognitive-services/en-us/emotion-api">the Microsoft Emotion API</a>
+       Made by <a href="http://alex.holachek.com/" target="_blank">Alex</a> using <a href="https://giphy.com/" target="_blank">GIPHY</a> and
+       <a href="https://www.microsoft.com/cognitive-services/en-us/emotion-api" target="_blank">the Microsoft Emotion API</a>
       </span>
     </div>
   </footer>

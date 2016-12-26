@@ -1,6 +1,6 @@
 # Gif Search
 
-> A Vue.js project
+Small front end build in Vue.js for [this backend service](https://github.com/aholachek/gif-search-backend).
 
 ## Build Setup
 

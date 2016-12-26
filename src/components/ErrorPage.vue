@@ -23,9 +23,9 @@ export default {
 }
 </script>
 
-<style>
-
-footer {
-  font-size: 1.3rem;
+<style scoped>
+.text-centered h2{
+  margin: 2rem 0;
 }
+
 </style>
