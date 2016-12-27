@@ -17,7 +17,6 @@
       <div style="margin:0 2rem">
         <iframe v-bind:src="gifURL" height="300" width="400" frameBorder="0" class="giphy-embed" allowFullScreen/>
         <p>
-          <small><a href="https://giphy.com/">via GIPHY</a></small>
         </p>
       </div>
       <div style="align-items:flex-end" class="hidden-sm-up">
