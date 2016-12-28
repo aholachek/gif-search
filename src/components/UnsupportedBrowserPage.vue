@@ -2,7 +2,7 @@
   <div class="card error-card">
     <h2>Sorry, Your Current Browser Doesn't Support Webcam Access</h2>
     <p>This is an experimental app that requires usage of the webcam.</p>
-    <p>Please try using a desktop version of one of the following browsers instead:
+    <p>Please try using a <b>desktop version</b> of one of the following browsers instead:
       <br>
       <br>
       <ul class="list-unstyled">
@@ -24,9 +24,9 @@ export default {
 
 .error-card {
   margin: 4rem auto;
-  padding: 2rem;
+  padding: 1rem;
   max-width: 500px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .error-card h2 {
