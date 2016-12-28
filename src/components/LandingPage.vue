@@ -16,7 +16,7 @@
         <img src="./../assets/happy.png" alt="picture of a happy stick figure" class="img-fluid">
       </div>
       <div class="card">
-        <iframe src="//giphy.com/embed/jp2KXzsPtoKFG" width="400" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <iframe src="//giphy.com/embed/jp2KXzsPtoKFG" width="300" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
       </div>
     </div>
       <div>
