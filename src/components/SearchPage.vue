@@ -31,6 +31,10 @@ export default {
   name: 'search',
   mounted() {
     Webcam.attach('.my-camera');
+    Webcam.on('error', function(error){
+      console.log('oh god an error');
+    });
+
   },
   data: function() {
     return {

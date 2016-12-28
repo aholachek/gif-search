@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="solid-bar">
     <div class="container">
       <router-link to="/">
       <h1>Reaction GIF Generator</h1>

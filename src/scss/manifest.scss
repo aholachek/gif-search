@@ -12,9 +12,6 @@ a {
   font-family: $font-family-sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6,a:not(.btn){
-  font-family : 'Space Mono', monospace;
-}
 
 h1, h3 {
   font-weight: bold;
@@ -25,7 +22,6 @@ nav a {
 }
 
 .attention-font {
-  font-family : 'Space Mono', monospace;
   font-weight: bold;
 }
 
@@ -71,7 +67,8 @@ header {
 }
 
 footer {
-  padding: 1rem;
+  font-size: 1.3rem;
+  margin-top: 3rem;
 }
 
 .card {
@@ -90,4 +87,18 @@ footer {
   .examples .flex .card:first-of-type {
     margin-right: 5%;
   }
+}
+
+body {
+  background: $gray-lightest;
+}
+
+.solid-bar {
+  background: darken($gray-lighter, 5);
+  padding: 1rem 0;
+  margin: 0 -15px;
+}
+
+.solid-bar--lighter {
+  background: $gray-lighter;
 }
