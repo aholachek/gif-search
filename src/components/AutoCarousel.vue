@@ -43,8 +43,10 @@ export default {
 
 .carousel {
   position : relative;
-  height: 300px;
-  margin: auto;
+  height: 335px;
+  margin: 2rem auto 0 auto;
+  width: 800px;
+  background: #dee2e3;
 }
 .carousel__slide {
   transition: opacity .5s;
