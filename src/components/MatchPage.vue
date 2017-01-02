@@ -8,31 +8,32 @@
         <img v-bind:src="screenshot" alt="screenshot" class="screenshot img-circle" />
       </div>
     </div>
-    <div class="flex card gif-card">
+    <div class="flex gif-card">
       <div style="align-items:flex-end" class="hidden-sm-down">
         <button class="btn btn-primary" @click="prevIndex">
-          <i class="fa fa-arrow-left" aria-label="next"></i>
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          prev
         </button>
       </div>
       <div style="margin:0 2rem">
         <iframe v-bind:src="gifURL" height="300" width="400" frameBorder="0" class="giphy-embed" allowFullScreen/>
-        <p>
-        </p>
       </div>
       <div style="align-items:flex-end" class="hidden-sm-up">
         <button class="btn btn-primary" @click="prevIndex">
-          <i class="fa fa-arrow-left" aria-label="next"></i>
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          prev
         </button>
       </div>
       <div style="align-items:flex-start">
-        <button class="btn btn-primary" @click="nextIndex" aria-label="prev">
-          <i class="fa fa-arrow-right"></i>
+        <button class="btn btn-primary" @click="nextIndex" >
+          next <i class="fa fa-arrow-right"></i>
+
         </button>
       </div>
     </div>
     <div class="centered-btn-container">
       <router-link to="/search" class="btn btn-lg btn-primary">
-        <i class="fa fa-arrow-left"></i>&nbsp;Try again with another picture
+        <i class="fa fa-arrow-circle-o-left fa-lg"></i>&nbsp;Try again with another selfie
       </router-link>
     </div>
   </div>
@@ -67,14 +68,7 @@ export default {
   computed : {
     gifURL : function() {
       return this.$data.gifList[this.$data.gifIndex].embed_url.replace('http', 'https');
-    },
-    // nextGif : function() {
-    //   if (this.$data.gifIndex + 1 < this.$data.gifList.length){
-    //     return this.$data.gifList[this.$data.gifIndex + 1];
-    //   } else {
-    //     return this.$data.gifList[0];
-    //   }
-    // }
+    }
   },
   methods : {
     nextIndex : function(){
@@ -107,7 +101,6 @@ h1 {
 }
 
 .gif-card{
-  max-width: 600px;
   margin:auto;
 }
 

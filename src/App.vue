@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <AppHeader></AppHeader>
-    <div class="vertical-spacer">
+    <div class="content">
+      <AppHeader></AppHeader>
       <router-view></router-view>
     </div>
     <AppFooter></AppFooter>
@@ -28,7 +28,16 @@ export default {
 
 <style>
 
-.vertical-spacer {
-  min-height: 50vh;
+html,body {
+  height: 100%;
 }
+#app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+}
+
 </style>

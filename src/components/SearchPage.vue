@@ -47,6 +47,7 @@ export default {
       Webcam.snap(function(data_uri) {
 
         that.$data.loading = true;
+        
         axios.post('https://reaction-gif.herokuapp.com/', {
           data: data_uri
         }).then(function(response) {
