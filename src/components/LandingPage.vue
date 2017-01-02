@@ -47,7 +47,7 @@
 
     <div class="centered-btn-container">
       <router-link to="/search" class="btn btn-lg btn-primary">
-        <i class="fa fa-lg fa-arrow-circle-o-right"></i>&nbsp;Take a selfie to get started
+        <i class="fa fa-lg fa-arrow-circle-o-right"></i>&nbsp;Click here to get started
       </router-link>
     </div>
     </div>
@@ -74,8 +74,9 @@ export default {
 
 .explanation {
   font-weight: 300;
+  font-size: 1.5rem;
+  padding-top: .4rem;
 }
-
 
 .examples h3 {
   text-align: center;

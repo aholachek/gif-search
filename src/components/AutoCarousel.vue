@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="carousel" ref="carousel">
+  <div class="carousel card" ref="carousel">
     <slot></slot>
   </div>
 </template>
@@ -44,9 +44,9 @@ export default {
 .carousel {
   position : relative;
   height: 335px;
-  margin: 2rem auto 0 auto;
+  margin: 4rem auto 0 auto;
   width: 800px;
-  background: #dee2e3;
+  background: white;
 }
 .carousel__slide {
   transition: opacity .5s;
