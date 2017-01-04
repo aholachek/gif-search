@@ -1,5 +1,5 @@
 <template>
-<div class="my-camera-container card">
+<div class="my-camera-container card raised-card">
   <div class="my-camera"></div>
   <button v-if="loading" type="button" class="btn btn-lg btn-primary submit-btn">
     <i class="fa fa-spinner fa-pulse fa-fw"></i>
@@ -47,7 +47,7 @@ export default {
       Webcam.snap(function(data_uri) {
 
         that.$data.loading = true;
-        
+
         axios.post('https://reaction-gif.herokuapp.com/', {
           data: data_uri
         }).then(function(response) {

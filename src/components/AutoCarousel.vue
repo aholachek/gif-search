@@ -46,7 +46,6 @@ export default {
   height: 335px;
   margin: 4rem auto 0 auto;
   width: 800px;
-  background: white;
 }
 .carousel__slide {
   transition: opacity .5s;

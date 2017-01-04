@@ -13,8 +13,15 @@ a {
 }
 
 
-h1, h3 {
+h1 {
   font-weight: bold;
+  text-shadow : -0.1rem -0.1rem rgba(149, 251, 236, 0.45), 0.2rem 0.2rem rgba(247, 162, 170, 0.42);
+  color: $body-color;
+}
+
+.btn-primary {
+  box-shadow : -0.2rem -0.2rem #95fbec, 0.2rem 0.2rem  rgb(247, 162, 170);
+  background: $body-color;
 }
 
 nav a {
@@ -63,15 +70,18 @@ nav a {
 }
 
 header {
-  padding: 1rem 0;
+  padding: 1rem 0 0 0;
 }
 
 footer {
   font-size: 1.3rem;
 }
 
-.card {
+.carousel.card {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.raised-card {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
 .text-centered {
@@ -88,16 +98,11 @@ footer {
   }
 }
 
+
 body {
-  background: $gray-lightest;
+  // background-image: linear-gradient(to bottom right, rgba(255, 82, 82, 0.54), rgba(62, 86, 255, 0.5), rgba(9, 255, 210, 0.43))
 }
 
-.solid-bar {
-  background: darken($gray-lighter, 5);
-  padding: .5rem 0;
-  margin: 0 -15px;
-}
-
-.solid-bar--lighter {
-  background: $gray-lighter;
+.card {
+  background-color: fade-out(white, .5);
 }

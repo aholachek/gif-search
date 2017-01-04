@@ -1,14 +1,14 @@
 <template>
   <div>
   <div class="solid-bar solid-bar--lighter">
-    <h2 class="text-centered text-muted explanation">
+    <h2 class="text-centered explanation">
       Take a selfie and get a reaction GIF
     </h2>
   </div>
   <auto-carousel class="container examples">
     <div>
       <div>
-        <h3>Happy</h3>
+        <h3>"Happy"</h3>
       </div>
       <div class="flex">
         <div class="card">
@@ -21,7 +21,7 @@
     </div>
     <div>
       <div>
-        <h3>Meh</h3>
+        <h3>"Meh"</h3>
       </div>
       <div class="flex">
         <div class="card">
@@ -33,7 +33,7 @@
     </div>
     <div>
       <div>
-        <h3>Bitch Please</h3>
+        <h3>"Bitch Please"</h3>
       </div>
       <div class="flex">
         <div class="card">
