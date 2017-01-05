@@ -1,40 +1,18 @@
-
-
-
 @import '_custom-variables';
 @import './../../node_modules/bootstrap/scss/bootstrap';
 
-a {
-  font-weight: bold;
-}
-
-.regular-text {
-  font-family: $font-family-sans-serif;
-}
 
 
 h1 {
   font-weight: bold;
-  text-shadow : -0.1rem -0.1rem rgba(149, 251, 236, 0.45), 0.2rem 0.2rem rgba(247, 162, 170, 0.42);
   color: $body-color;
 }
 
 .btn-primary {
-  box-shadow : -0.2rem -0.2rem #95fbec, 0.2rem 0.2rem  rgb(247, 162, 170);
   background: $body-color;
+  border-color: $body-color;
 }
 
-nav a {
-  font-size: 1.3rem;
-}
-
-.attention-font {
-  font-weight: bold;
-}
-
-.font-weight-light {
-  font-weight: 300;
-}
 
 .flex {
   display: flex;
@@ -71,15 +49,23 @@ nav a {
 
 header {
   padding: 1rem 0 0 0;
+
+  a:hover {
+   h1 {
+     color: $brand-primary;
+    }
+    text-decoration: none;
+
+  }
 }
 
 footer {
   font-size: 1.3rem;
+  background: fade-out(white, .5);
+  padding: 1rem 0;
 }
 
-.carousel.card {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-}
+
 .raised-card {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
@@ -88,21 +74,44 @@ footer {
   text-align: center;
 }
 
-.btn {
-  white-space: normal !important;
-}
+.landing-page-text {
+  font-weight: 300;
+  position: relative;
+  transform: translateY(-50%);
+  top: 50vh;
 
-@include media-breakpoint-up(sm) {
-  .examples .flex .card:first-of-type {
-    margin-right: 5%;
+  h1 {
+    font-size: 3.5rem;
+    color: white;
+  }
+  h2 {
+    font-size: 2.8rem;
+    color: white;
+  }
+
+  a {
+    margin-top: 2rem;
+    background-color: $brand-primary;
+    border: $brand-primary;
   }
 }
 
-
-body {
-  // background-image: linear-gradient(to bottom right, rgba(255, 82, 82, 0.54), rgba(62, 86, 255, 0.5), rgba(9, 255, 210, 0.43))
+body.happy {
+  background-image : linear-gradient(fade-out(black, .3), fade-out(black, .8)), url('./../assets/cute-dog.gif');
+  background-size: cover;
 }
 
-.card {
-  background-color: fade-out(white, .5);
+body.bitch-please {
+  background-image : linear-gradient(fade-out(black, .3), fade-out(black, .8)), url('./../assets/bitch-please.gif');
+  background-size: cover;
+}
+
+body.meh {
+  background-image : linear-gradient(fade-out(black, .3), fade-out(black, .8)), url('./../assets/what.gif');
+  background-size: cover;
+}
+
+body.smug {
+  background-image : linear-gradient(fade-out(black, .3), fade-out(black, .8)), url('./../assets/smug.gif');
+  background-size: cover;
 }

@@ -11,18 +11,15 @@
 
 </div>
 
-
-
 </template>
 
+
 <script>
-export default {
-}
+export default {}
 </script>
 
 <style scoped>
-.text-centered h2{
+.text-centered h2 {
   margin: 2rem 0;
 }
-
 </style>

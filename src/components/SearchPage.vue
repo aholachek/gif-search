@@ -1,28 +1,32 @@
 <template>
-<div class="my-camera-container card raised-card">
-  <div class="my-camera"></div>
-  <button v-if="loading" type="button" class="btn btn-lg btn-primary submit-btn">
-    <i class="fa fa-spinner fa-pulse fa-fw"></i>
-      analyzing expression...
-    </button>
-  <button v-else type="button" class="btn btn-lg btn-primary submit-btn" @click="submitPic">
-          <i class="fa fa-camera"></i>&nbsp;submit my current expression
+  <div>
+    <app-header></app-header>
+    <div class="my-camera-container card raised-card">
+      <div class="my-camera"></div>
+      <button v-if="loading" type="button" class="btn btn-lg btn-primary submit-btn">
+        <i class="fa fa-spinner fa-pulse fa-fw"></i>
+          analyzing expression...
         </button>
-  <div class="">
-    <p>
-      <ul class="instructions">
-        <span class="attention-font">Tips</span>
-        <li> Make sure your face is well lit and in center of frame.</li>
-        <li> Take off glasses or anything that hides your face.</li>
-        <li> Try a slightly exaggerated expression. </li>
-      </ul>
-    </p>
+      <button v-else type="button" class="btn btn-lg btn-primary submit-btn" @click="submitPic">
+              <i class="fa fa-camera"></i>&nbsp;submit my current expression
+            </button>
+      <div class="">
+        <p>
+          <ul class="instructions">
+            <li> Make sure your face is well lit, not washed out, and in the center of the frame.</li>
+            <li> Take off glasses or anything that hides your face.</li>
+            <li> Try a slightly exaggerated expression. </li>
+          </ul>
+        </p>
+      </div>
+    </div>
   </div>
-</div>
+
 </template>
 
 <script>
 import Webcam from 'webcamjs';
+import AppHeader from './Header';
 import appData from './../appData';
 import axios from 'axios';
 import _ from 'lodash';
@@ -40,6 +44,9 @@ export default {
     return {
       loading: false
     }
+  },
+  components : {
+    'app-header' : AppHeader
   },
   methods: {
     submitPic: function() {

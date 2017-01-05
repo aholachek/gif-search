@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <div class="content">
-      <AppHeader></AppHeader>
       <router-view></router-view>
     </div>
     <AppFooter></AppFooter>
@@ -9,7 +8,6 @@
 </template>
 
 <script>
-import AppHeader from './components/Header';
 import AppFooter from './components/Footer';
 
 export default {
@@ -20,7 +18,6 @@ export default {
   }
   },
   components: {
-    AppHeader,
     AppFooter
   }
 };
