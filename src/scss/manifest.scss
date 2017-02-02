@@ -2,7 +2,6 @@
 @import './../../node_modules/bootstrap/scss/bootstrap';
 
 
-
 h1 {
   font-weight: bold;
   color: $body-color;
@@ -60,9 +59,9 @@ header {
 }
 
 footer {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   background: fade-out(white, .5);
-  padding: 1rem 0;
+  padding: 1rem 0 .5rem 0;
 }
 
 
@@ -94,6 +93,10 @@ footer {
     background-color: $brand-primary;
     border: $brand-primary;
   }
+}
+
+body {
+  transition: background-image 0.3s ease-in-out;
 }
 
 body.happy {

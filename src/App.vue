@@ -3,7 +3,7 @@
     <div class="content">
       <router-view></router-view>
     </div>
-    <AppFooter></AppFooter>
+    <AppFooter v-if="webcam"></AppFooter>
   </div>
 </template>
 
@@ -15,7 +15,13 @@ export default {
   created : function(){
   if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia){
     this.$router.push('/unsupported-browser');
+  this.$data.webcam=false;
   }
+  },
+  data : function(){
+    return {
+      webcam : true
+    }
   },
   components: {
     AppFooter

@@ -1,6 +1,6 @@
 # Gif Search
 
-Small front end build in Vue.js for [this backend service](https://github.com/aholachek/gif-search-backend).
+Small front end build in Vue.js for [this backend node service](https://github.com/aholachek/gif-search-backend).
 
 ## Build Setup
 
@@ -14,11 +14,4 @@ npm run dev
 # build for production with minification
 npm run build
 
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

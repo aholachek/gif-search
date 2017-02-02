@@ -12,11 +12,11 @@
             </button>
       <div class="">
         <p>
-          <ul class="instructions">
-            <li> Make sure your face is well lit, not washed out, and in the center of the frame.</li>
+          <ol class="instructions">
+            <li> Make sure your face is well lit from the front.</li>
             <li> Take off glasses or anything that hides your face.</li>
-            <li> Try a slightly exaggerated expression. </li>
-          </ul>
+            <li> Try a slightly exaggerated expression! </li>
+          </ol>
         </p>
       </div>
     </div>
@@ -90,12 +90,11 @@ export default {
 }
 
 .instructions {
-  list-style: none;
   margin-left: .6rem;
 }
 
 .submit-btn {
-  margin: 1rem auto 3rem auto;;
+  margin: 1rem auto 3rem auto;
   width: 80%;
   display: block !important;
 }
